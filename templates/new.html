@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Firebase Login Method:</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+<div align="right">
+	<form action="/" method="post">
+		
+		<table><tr>
+		<td>Email:
+		<input type="text" placeholder="Username" name="name">
+		</td>
+        <td>Password:
+        <input type="password" placeholder="Password" name="pass">
+        </td>
+        <td>
+        <input class="btn btn-default" type="submit" value="Log in">
+    	</td>
+    	</tr></table>
+		</form>
+		{% if error %}
+        <h1>Login Failed!</h1>
+      {% endif %}
+</div>
+</body>
+</html>
